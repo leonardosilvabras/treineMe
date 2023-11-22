@@ -1,1 +1,10 @@
-/*# sourceMappingURL=globalStyles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .page {
+  width: 62.5rem;
+  margin: 4.063rem auto 0;
+}/*# sourceMappingURL=globalStyles.css.map */
