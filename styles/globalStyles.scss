@@ -13,9 +13,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    min-width: 100VW;
-    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);    ;
-    
+    min-width: 100vw;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
     #page {
         width: 62.5rem;
 
@@ -92,7 +92,7 @@ body {
                 }
 
                 button:hover {
-                    transition: .5s;
+                    transition: 0.5s;
                     cursor: pointer;
                     background-color: #429e7e;
                 }
