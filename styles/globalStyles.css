@@ -16,6 +16,7 @@ body {
 }
 body #page {
   width: 62.5rem;
+  padding-top: 4rem;
 }
 body #page nav {
   display: flex;
@@ -88,7 +89,7 @@ body #page footer {
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.75rem;
-  margin-top: 5.125rem;
+  margin-top: 3rem;
 }
 body #page footer a {
   text-decoration: none;
