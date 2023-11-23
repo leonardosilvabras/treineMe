@@ -1,15 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100VW;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);    ;
+    
     #page {
         width: 62.5rem;
-        margin: 4.063rem auto 0;
 
-        header {
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -23,8 +33,88 @@ body {
                 flex-flow: row nowrap;
                 list-style: none;
                 gap: 3rem;
-                li:hover{cursor: pointer;}
+                font-family: "Mulish", sans-serif;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #1f1534;
+                    }
+
+                    a:hover {
+                        font-weight: bold;
+                    }
+                }
             }
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: row nowrap;
+
+            .text {
+                font-family: "Mulish", sans-serif;
+                width: 27.375rem;
+
+                h1 {
+                    font-size: 3.063rem;
+                    line-height: 3.5rem;
+                    color: #1f1534;
+                    font-weight: normal;
+
+                    span {
+                        color: #89c5cc;
+                        font-weight: bold;
+                    }
+                }
+
+                P {
+                    font-size: 0.875rem;
+                    line-height: 1.75rem;
+                    color: #7d7987;
+                    margin: 2.5rem 0;
+                }
+
+                button {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    padding: 0.875rem 2rem 0.938rem;
+                    gap: 0.625rem;
+                    border: none;
+                    border-radius: 0.25rem;
+                    color: #f9f9f9;
+                    background-color: #69b99d;
+                    flex-shrink: 0;
+                }
+
+                button:hover {
+                    transition: .5s;
+                    cursor: pointer;
+                    background-color: #429e7e;
+                }
+            }
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+            margin-top: 5.125rem;
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: #1f1534;
+            }
+        }
+
+        #balls {
+            position: fixed;
+            bottom: 0;
+            right: 0;
         }
     }
 }

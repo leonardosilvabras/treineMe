@@ -1,28 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100VW;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
 body #page {
   width: 62.5rem;
-  margin: 4.063rem auto 0;
 }
-body #page header {
+body #page nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
   margin-bottom: 3.438rem;
 }
-body #page header ul {
+body #page nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
   list-style: none;
   gap: 3rem;
+  font-family: "Mulish", sans-serif;
 }
-body #page header ul li:hover {
+body #page nav ul li a {
+  text-decoration: none;
+  color: #1f1534;
+}
+body #page nav ul li a:hover {
+  font-weight: bold;
+}
+body #page main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+body #page main .text {
+  font-family: "Mulish", sans-serif;
+  width: 27.375rem;
+}
+body #page main .text h1 {
+  font-size: 3.063rem;
+  line-height: 3.5rem;
+  color: #1f1534;
+  font-weight: normal;
+}
+body #page main .text h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+body #page main .text P {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: #7d7987;
+  margin: 2.5rem 0;
+}
+body #page main .text button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem 0.938rem;
+  gap: 0.625rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: #f9f9f9;
+  background-color: #69b99d;
+  flex-shrink: 0;
+}
+body #page main .text button:hover {
+  transition: 0.5s;
   cursor: pointer;
+  background-color: #429e7e;
+}
+body #page footer {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  margin-top: 5.125rem;
+}
+body #page footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1f1534;
+}
+body #page #balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }/*# sourceMappingURL=globalStyles.css.map */
