@@ -5,8 +5,26 @@
 }
 
 body {
-    .page {
+    #page {
         width: 62.5rem;
         margin: 4.063rem auto 0;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row nowrap;
+            margin-bottom: 3.438rem;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row nowrap;
+                list-style: none;
+                gap: 3rem;
+                li:hover{cursor: pointer;}
+            }
+        }
     }
 }

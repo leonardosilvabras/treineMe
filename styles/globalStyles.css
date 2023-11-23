@@ -4,7 +4,25 @@
   box-sizing: border-box;
 }
 
-body .page {
+body #page {
   width: 62.5rem;
   margin: 4.063rem auto 0;
+}
+body #page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin-bottom: 3.438rem;
+}
+body #page header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  list-style: none;
+  gap: 3rem;
+}
+body #page header ul li:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=globalStyles.css.map */
